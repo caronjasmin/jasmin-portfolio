@@ -7,14 +7,17 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      background: linear-gradient(135deg, #f7c6d0, #c8d5b9); /* pink + sage green gradient */
+      /* Pink base with white polka dots */
+      background-color: #f7c6d0; /* soft pink */
+      background-image: radial-gradient(#ffffff 10%, transparent 11%);
+      background-size: 40px 40px; /* dot spacing */
       color: #333;
       line-height: 1.6;
     }
     header {
       text-align: center;
       padding: 80px 20px;
-      background: #fff;
+      background: rgba(255,255,255,0.9);
       border-bottom: 5px solid #f28482; /* pink accent */
     }
     header h1 {
@@ -69,16 +72,12 @@
       padding: 20px;
       font-size: 0.9em;
       color: #555;
-      background: #fff;
+      background: rgba(255,255,255,0.9);
       border-top: 5px solid #f28482;
     }
     img {
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    iframe, video {
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -94,26 +93,13 @@
       I am a Technical Engineer with 5+ years in engineering, who transitioned into project management after studying at Seneca Polytechnic, Canada. 
       I love blending technology with aesthetics, staying chill yet curious while exploring opportunities. 
       My passion is working with people to bring their ideas to life and create impactful solutions with a touch of creativity. 
-      "Video paglu and CHALANT, that's me"
+      Video pagluw ith aesthtics but not all aetshic
     </p>
 
     <!-- Cute cat picture -->
     <div style="text-align:center; margin-top:20px;">
       <img src="cat-cute.jpeg" alt="Cute aesthetic cat" width="300">
       <p style="color:#555; font-style:italic;">A playful aesthetic vibe that inspires me</p>
-    </div>
-
-    <!-- Video embed -->
-    <p>
-      Here’s a short video that reflects my vibe — tech meets aesthetics, but not all aesthetic:
-    </p>
-    <div style="text-align:center;">
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
     </div>
   </section>
 
