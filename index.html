@@ -5,7 +5,7 @@
   <title>Jasmin | Technical Project Manager</title>
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Comic Sans MS', 'Segoe UI', Arial, sans-serif; /* playful font */
       margin: 0;
       /* Pink base with white polka dots */
       background-color: #f7c6d0; /* soft pink */
@@ -16,25 +16,40 @@
     }
     header {
       text-align: center;
-      padding: 80px 20px;
+      padding: 40px 20px;
       background: rgba(255,255,255,0.9);
       border-bottom: 5px solid #f28482; /* pink accent */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header .top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    header img {
+      border-radius: 50%;
+      border: 4px solid #f28482;
+      width: 120px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     header h1 {
       font-size: 2.5em;
-      margin-bottom: 10px;
+      margin: 0;
       color: #2f3e46;
     }
     header p {
       font-size: 1.2em;
       color: #4a4a4a;
+      margin-top: 10px;
     }
     section {
       max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: #fff;
-      border-radius: 10px;
+      border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     h2 {
@@ -42,6 +57,7 @@
       padding-bottom: 5px;
       margin-bottom: 20px;
       color: #2f3e46;
+      font-family: 'Trebuchet MS', sans-serif;
     }
     ul {
       list-style: none;
@@ -59,9 +75,10 @@
       color: #fff;
       padding: 12px 25px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
       margin: 0 10px;
+      transition: 0.3s;
     }
     .cta a:hover {
       background: #f28482; /* pink hover */
@@ -75,15 +92,15 @@
       background: rgba(255,255,255,0.9);
       border-top: 5px solid #f28482;
     }
-    img {
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Jasmin</h1>
+    <div class="top">
+      <!-- Cute cat picture beside name -->
+      <img src="cat-cute.jpeg" alt="Cute aesthetic cat">
+      <h1>Jasmin</h1>
+    </div>
     <p>Technical Project Manager at Avyka | Salesforce & DevOps</p>
   </header>
 
@@ -95,12 +112,6 @@
       My passion is working with people to bring their ideas to life and create impactful solutions with a touch of creativity. 
       Video pagluw ith aesthtics but not all aetshic
     </p>
-
-    <!-- Cute cat picture -->
-    <div style="text-align:center; margin-top:20px;">
-      <img src="cat-cute.jpeg" alt="Cute aesthetic cat" width="300">
-      <p style="color:#555; font-style:italic;">A playful aesthetic vibe that inspires me</p>
-    </div>
   </section>
 
   <section>
